@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_ftp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#87CEEB">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="IP address"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+    <EditText
+        android:id="@+id/edit_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/round"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:text="File Path"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:id="@+id/edit_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="storage/emulated/0/"
+        android:background="@drawable/round"
+        android:gravity="center"/>
+
+    <mehdi.sakout.fancybuttons.FancyButton
+        android:id="@+id/btn_trans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        fancy:fb_borderColor="#FFFFFF"
+        fancy:fb_borderWidth="1dp"
+        fancy:fb_defaultColor="#7ab800"
+        fancy:fb_focusColor="#9bd823"
+        fancy:fb_fontIconResource="&#xf090;"
+        fancy:fb_iconPosition="left"
+        fancy:fb_text="TRANSMISSION!"
+        fancy:fb_textColor="#FFFFFF" />
+
+</LinearLayout>

@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_testing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#999999"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Orientation"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Watch  variation"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mobile variation"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="subtraction"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Orientation X"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/watch_x"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/mobile_x"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/sub_x"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Orientation Y"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/watch_y"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/mobile_y"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/sub_y"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Orientation Z"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/watch_z"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/mobile_z"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/sub_z"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph_watch"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"/>
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"/>
+
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph_sub"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:text="Motion Recognition"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#999999"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="UP"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="DOWN"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="LEFT"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="RIGHT"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/count_up"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/count_down"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/count_left"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/count_right"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="1dp"
+                android:background="#FFFFFF"
+                android:gravity="center"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <Button
+                android:id="@+id/start"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="START" />
+            <Button
+                android:id="@+id/stop"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="STOP"
+               />
+            <Button
+                android:id="@+id/record"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="RECORD"
+               />
+            <Button
+                android:id="@+id/save"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="SAVE"
+                />
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

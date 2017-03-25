@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Cycle Assistant Tools</string>
+    <string name="accM">ACC(M)</string>
+    <string name="gyroM">GYRO(M)</string>
+    <string name="fuseM">FUSE(M)</string>
+    <string name="accW">ACC(W)</string>
+    <string name="gyroW">GYRO(W)</string>
+    <string name="fuseW">FUSE(W)</string>
+    <string name="differW">DIFFER(W)</string>
+    <string name="differM">DIFFER(M)</string>
+
+
+    <string name="roll">ROLL</string>
+    <string name="pitch">PITCH</string>
+    <string name="yaw">YAW</string>
+
+    <string name="start">START</string>
+    <string name="stop">STOP</string>
+    <string name="record">RECORD</string>
+    <string name="save">SAVE</string>
+
+</resources>
