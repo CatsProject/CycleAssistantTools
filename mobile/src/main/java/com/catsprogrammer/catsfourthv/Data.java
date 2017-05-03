@@ -21,6 +21,8 @@ public class Data {
     public static boolean[] downStack = {false, false, false, false};
 
 
+    public static float[][] gravitySensorM = new float[30][3];
+
 
 
     public static float[] gyroOrientationM = new float[3];

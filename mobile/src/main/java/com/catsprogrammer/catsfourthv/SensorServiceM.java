@@ -48,6 +48,7 @@ public class SensorServiceM extends Service implements SensorEventListener, TagN
         Sensor accelerometerSensor = sensorManager.getDefaultSensor(SENS_ACCELEROMETER);
         Sensor gyroscopeSensor = sensorManager.getDefaultSensor(SENS_GYROSCOPE);
         Sensor magneticSensor = sensorManager.getDefaultSensor(SENS_MAGNETIC);
+        Sensor gravitySensor = sensorManager.getDefaultSensor(SENS_GRAVITY);
 
         if (sensorManager != null) {
             if (accelerometerSensor != null) {
@@ -59,6 +60,8 @@ public class SensorServiceM extends Service implements SensorEventListener, TagN
             if (magneticSensor != null) {
                 sensorManager.registerListener(this, magneticSensor, SensorManager.SENSOR_DELAY_GAME);
             }
+            if (gravitySensor != null)
+                sensorManager.registerListener(this, gravitySensor, SensorManager.SENSOR_DELAY_GAME);
         }
     }
     protected void stopMeasurement() {

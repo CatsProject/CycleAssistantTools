@@ -83,6 +83,21 @@ public class SensorFilters implements TagName {
             case SENS_MAGNETIC:
                 mg = sensorValues;
                 break;
+
+            case SENS_GRAVITY:
+            {
+                float s1 = sensorValues[1];
+
+                if(s1 > 7.0 || s1 < -7.0)
+                    Log.i("충돌", "넘어짐");
+
+
+
+            }
+
+
+
+                break;
         }
 
         if(type == SENS_ACCELEROMETER) {
