@@ -20,6 +20,8 @@ public class Data {
     public static boolean[] upStack = {false, false, false, false};
     public static boolean[] downStack = {false, false, false, false};
 
+    public static int sending = 0;
+
 
     public static float[][] gravitySensorM = new float[30][3];
 

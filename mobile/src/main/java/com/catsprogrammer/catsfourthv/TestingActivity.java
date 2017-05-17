@@ -39,6 +39,7 @@ import static com.catsprogrammer.catsfourthv.Data.fuseTimer;
 import static com.catsprogrammer.catsfourthv.Data.isAlreadySend;
 import static com.catsprogrammer.catsfourthv.Data.leftCount;
 import static com.catsprogrammer.catsfourthv.Data.rightCount;
+import static com.catsprogrammer.catsfourthv.Data.sending;
 import static com.catsprogrammer.catsfourthv.Data.upCount;
 
 
@@ -65,6 +66,10 @@ public class TestingActivity extends AppCompatActivity implements TagName {
     private double graph3LastXValue = 0d;
 
 
+
+    FileOutputStream timeOutputStream;
+    PrintWriter timePrintWriter;
+
     TextView[] mobileSensor = new TextView[3];
     TextView[] watchSensor = new TextView[3];
     TextView[] subSensor = new TextView[3];
@@ -81,6 +86,7 @@ public class TestingActivity extends AppCompatActivity implements TagName {
     FileOutputStream[] fileOutputStreams = new FileOutputStream[4];
     PrintWriter[] printWriters = new PrintWriter[4];
     DecimalFormat d = new DecimalFormat("#.##");
+    int timer = 0;
 
     int time  = 0;
     @Override
@@ -135,11 +141,27 @@ public class TestingActivity extends AppCompatActivity implements TagName {
                         new SendWearable(START, TAG, googleApiClient).start();
 
                         checkSend = true;
+
+                        String filePath = "/mnt/sdcard/" + "UsingEnergyService" + ".txt";
+                        try {
+                            timeOutputStream = new FileOutputStream(filePath, false);
+
+                            timePrintWriter = new PrintWriter(timeOutputStream);
+
+                        } catch(Exception e)
+                        {
+                            e.printStackTrace();
+                        }
+
                         break;
                     case R.id.stop :
                         if(fuseTimer != null) {
                             fuseTimer.cancel();
                         }
+                        timePrintWriter.close();
+                        sending = 0;
+                        timer = 0;
+
                         isAlreadySend = false;
                         checkSend = false;
                         stopService(new Intent(getApplicationContext(), SensorServiceM.class));
@@ -297,7 +319,6 @@ public class TestingActivity extends AppCompatActivity implements TagName {
     }
 
     public class MyReceiver extends BroadcastReceiver { //여기서 일단 보여주는 예정..
-
         public MyReceiver() {
 
         }
@@ -306,6 +327,14 @@ public class TestingActivity extends AppCompatActivity implements TagName {
             String tag = intent.getStringExtra("DataSend");
 
             if(checkSend) {
+
+                if(timePrintWriter != null)
+                {
+                    timer++;
+                    timePrintWriter.println(timer + " " + sending);
+                    Log.i("코딩의 노예", timer + " " + sending);
+                }
+
                 for (int i = 0; i < 3; i++) {
                     mobileSensor[i].setText(d.format(differM[time][i]) + '°');
                     watchSensor[i].setText(d.format(differW[time][i]) + '°');
