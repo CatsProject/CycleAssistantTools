@@ -31,6 +31,12 @@ public class SensorService extends Service implements SensorEventListener, TagNa
 
 
     SensorManager mSensorManager;
+
+    double temp[] = {0.0, 0.0, 0.0};
+    double maro[] = {0.0, 0.0, 0.0};
+    boolean hello =  false;
+    int stacks = 20;
+
     //SensorFiltering sensorFiltering;
     //MobileClient client;
     MobileClient  client;
@@ -42,6 +48,8 @@ public class SensorService extends Service implements SensorEventListener, TagNa
     private float[] acc = new float[3];
     private float[] gyro = new float[3];
     private float[] magnet = new float[3];
+
+
 
     private ScheduledExecutorService mScheduler;
 
@@ -141,17 +149,54 @@ public class SensorService extends Service implements SensorEventListener, TagNa
         @Override
         public void run() {
 
-            for(int i = 0; i < 3; i++) {
-                accData[halfSecond * 3 + i] = acc[i];
-                gyroData[halfSecond * 3 + i] = gyro[i];
-                magnetData[halfSecond * 3 + i] = magnet[i];
-            }
-            gyroTimeStamp[halfSecond] = timestamp;
-            halfSecond++;
 
-            if(halfSecond >= 5) {
-                halfSecond = 0;
-                client.sendSensorData();
+            if(!hello)
+            {
+                hello = true;
+                temp[0] = acc[0];
+                temp[1] = acc[1];
+                temp[2] = acc[2];
+            }
+            else
+            {
+                maro[0] = temp[0] - acc[0];
+                maro[1] = temp[1] - acc[1];
+                maro[2] = temp[2] - acc[2];
+
+                temp[0] = acc[0];
+                temp[1] = acc[1];
+                temp[2] = acc[2];
+            }
+            double sumMaro = (Math.abs(maro[0])+ Math.abs(maro[1])+ Math.abs(maro[2]));
+            gyroTimeStamp[halfSecond] = timestamp;
+            if(sumMaro < 10)
+            {
+                stacks++;
+            }
+            else {
+                stacks = 0;
+            }
+            if(stacks < 20) {
+                for (int i = 0; i < 3; i++) {
+                    accData[halfSecond * 3 + i] = acc[i];
+                    gyroData[halfSecond * 3 + i] = gyro[i];
+                    magnetData[halfSecond * 3 + i] = magnet[i];
+                }
+
+                //Log.i("차이값",  Math.abs(maro[0]) + ", " + Math.abs(maro[1])  + ", " + Math.abs(maro[2]));
+
+
+                Log.i("차이값", "" + (Math.abs(maro[0]) + Math.abs(maro[1]) + Math.abs(maro[2])));
+
+
+                halfSecond++;
+
+                if (halfSecond >= 5) {
+                    halfSecond = 0;
+
+
+                    client.sendSensorData();
+                }
             }
         }
     }
