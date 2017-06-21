@@ -11,7 +11,7 @@
 
 ### Function & Algorithm
 
-<img src="https://github.com/CatsProject/CycleAssistantTools/blob/master/datas/dt.PNG" width="200" height="300"><br>
+<img src="https://github.com/CatsProject/CycleAssistantTools/blob/master/datas/dt.PNG" width="600" height="300"><br>
 
 
 
