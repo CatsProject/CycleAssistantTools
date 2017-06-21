@@ -15,4 +15,14 @@
 <br>
 <img src="https://github.com/CatsProject/CycleAssistantTools/blob/master/datas/ag.PNG" width="800" height="400"><br>
 
+### Screen Shot
+
+|Base Menu|Signal Screen|Testing Screen|
+|:---:|:---:|:---:|
+|<img src="https://github.com/CatsProject/CycleAssistantTools/blob/master/datas/s1.jpg" width="150" height="250">|<img src="https://github.com/CatsProject/CycleAssistantTools/blob/master/datas/s2.jpg" width="150" height="250">|<img src="https://github.com/CatsProject/CycleAssistantTools/blob/master/datas/s3.jpg" width="150" height="250">|
+
+<br>
+
+
+
 
