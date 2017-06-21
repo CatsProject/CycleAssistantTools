@@ -62,7 +62,7 @@ We tested 4 cases of motion recognition
 -Up Motion: 91%<br>
 -Down Motion: 87%<br>
 
-<img src="https://github.com/CatsProject/CycleAssistantTools/blob/master/datas/r1.png" width="200" height="300"><br>
+<img src="https://github.com/CatsProject/CycleAssistantTools/blob/master/datas/r1.PNG" width="600" height="300"><br>
 
 <br>
 
