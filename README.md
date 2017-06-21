@@ -2,7 +2,7 @@
 
 ### Introduction
 
-<img src ="https://github.com/CatsProject/CycleAssistantTools/tree/master/datas/p1" width ="300" height ="200"> <br> 
+<img src ="https://github.com/CatsProject/CycleAssistantTools/tree/master/datas/p1.jpg" width ="300" height ="200"> <br> 
 
 - Name:   C.A.T  –  <b>Cycle Assistant Tools</b> <br>
 - Description:  <b>Riding Assistance App</b> - Using Smartphone & Smartwatch <br>
