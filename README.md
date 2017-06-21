@@ -9,6 +9,25 @@
 - Main Function:  <b>Tail light</b> - Motion recognition using smart device sensors <br> 
 - Purpose:  <b>Turn signal</b> to communicate between cycle and vehicle <br>
 
+
+### SWAT
+
+<b>Strength</b>
+- No bicycle apps associated with motion recognition
+- Using BLE to minimize power consumption
+
+<b>Weaknesses</b>
+- Hardware limitation of wearable devices
+- Unstable profit model
+
+<b>Opportunities</b>
+- Possibility of growth in bicycles & 	wearables markets
+- Rapid growth in hardware development
+
+<b>Threats</b>
+- Similar competitor app’s appearance
+
+
 ### System Architecture
 
 
@@ -33,6 +52,16 @@ System structures can be divided into five major categories. <br>
 |Base Menu|Signal Screen|Testing Screen|
 |:---:|:---:|:---:|
 |<img src="https://github.com/CatsProject/CycleAssistantTools/blob/master/datas/s1.png" width="150" height="250">|<img src="https://github.com/CatsProject/CycleAssistantTools/blob/master/datas/s2.png" width="150" height="250">|<img src="https://github.com/CatsProject/CycleAssistantTools/blob/master/datas/s3.png" width="150" height="250">|
+
+### Result
+
+We tested 4 cases of motion recognition 
+Left Motion: 94%
+Right Motion: 83%
+Up Motion: 91%
+Down Motion: 87%
+
+
 
 <br>
 
