@@ -11,6 +11,14 @@
 
 ### System Architecture
 
+
+System structures can be divided into five major categories. <br>
+1. Pairing <br>
+2. Sensor Detection <br>
+3. Data transmission <br>
+4. Data Process <br>
+5. Motion Recognition & Generating Event <br>
+
 [See More Detail](https://github.com/CatsProject/CatsLibrary/wiki/3.-System-Architecture)
 
 
