@@ -1,6 +1,6 @@
-### CycleAssistantTools
+# CycleAssistantTools
 
-### Introduction
+## Introduction
 
 <img src="https://github.com/CatsProject/CycleAssistantTools/blob/master/datas/p1.jpg" width="200" height="300"><br>
 
@@ -10,7 +10,7 @@
 - Purpose:  <b>Turn signal</b> to communicate between cycle and vehicle <br>
 
 
-### SWAT
+## SWAT
 
 <b>Strength</b>
 - No bicycle apps associated with motion recognition
@@ -28,7 +28,7 @@
 - Similar competitor app’s appearance
 
 
-### System Architecture
+## System Architecture
 
 
 System structures can be divided into five major categories. <br>
@@ -41,19 +41,19 @@ System structures can be divided into five major categories. <br>
 [See More Detail](https://github.com/CatsProject/CatsLibrary/wiki/3.-System-Architecture)
 
 
-### Function & Algorithm
+## Function & Algorithm
 
 <img src="https://github.com/CatsProject/CycleAssistantTools/blob/master/datas/dt.PNG" width="800" height="400"><br>
 <br>
 <img src="https://github.com/CatsProject/CycleAssistantTools/blob/master/datas/ag.PNG" width="800" height="400"><br>
 
-### Screen Shot
+## Screen Shot
 
 |Base Menu|Signal Screen|Testing Screen|
 |:---:|:---:|:---:|
 |<img src="https://github.com/CatsProject/CycleAssistantTools/blob/master/datas/s1.png" width="150" height="250">|<img src="https://github.com/CatsProject/CycleAssistantTools/blob/master/datas/s2.png" width="150" height="250">|<img src="https://github.com/CatsProject/CycleAssistantTools/blob/master/datas/s3.png" width="150" height="250">|
 
-### Result
+## Result
 
 We tested 4 cases of motion recognition 
 Left Motion: 94%
