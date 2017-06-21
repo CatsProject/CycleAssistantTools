@@ -9,6 +9,11 @@
 - Main Function:  <b>Tail light</b> - Motion recognition using smart device sensors <br> 
 - Purpose:  <b>Turn signal</b> to communicate between cycle and vehicle <br>
 
+### System Architecture
+
+[See More Detail](https://github.com/CatsProject/CatsLibrary/wiki/3.-System-Architecture)
+
+
 ### Function & Algorithm
 
 <img src="https://github.com/CatsProject/CycleAssistantTools/blob/master/datas/dt.PNG" width="800" height="400"><br>
