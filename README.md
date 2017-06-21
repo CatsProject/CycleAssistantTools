@@ -57,10 +57,10 @@ System structures can be divided into five major categories. <br>
 
 We tested 4 cases of motion recognition
 <br>
-Left Motion: 94%<br>
-Right Motion: 83%<br>
-Up Motion: 91%<br>
-Down Motion: 87%<br>
+-Left Motion: 94%<br>
+-Right Motion: 83%<br>
+-Up Motion: 91%<br>
+-Down Motion: 87%<br>
 
 
 
